@@ -1,0 +1,12 @@
+#qualities{
+    position: absolute !important;
+    top: 0 !important;
+    background: transparent !important;
+    padding-bottom: 5px;
+}
+#qualities a > div{
+    border-color: transparent !important;
+    text-shadow: 1px 1px 2px #000;
+    font-weight: 700;
+    background: rgba(0,0,0,0.7) !important;
+}

@@ -1,0 +1,156 @@
+body{
+    overflow-x: hidden !important;
+    background: #000 !important;
+}
+.navbar{
+    display: none !important;
+}
+.container.content{
+    margin-top: 0 !important;
+    width: 1200px !important;
+    background: #000 !important;
+}
+.scroll-top-wrapper{
+    right: auto !important;
+    left: 30px !important;
+}
+.themeSwitch{
+    left: 30px !important;
+    right: auto !important;
+}
+.detach_to_bottom_options{
+    position: absolute;
+    top: -30px;
+    right: 0;
+    padding: 4px;
+    background: #2e2e2e;
+    display: none;
+}
+.detach_to_bottom .detach_to_bottom_options{
+    display: inline-flex;
+}
+.detach_to_bottom_options .option{
+    padding: 2px 8px;
+    font-weight: 800;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    text-shadow: 2px 1px 3px rgba(0,0,0,0.8);
+    border-color: #161616;
+    border-width: thick;
+    outline: none;
+}
+.detach_to_bottom_options span.option:hover{
+    background: #2e87e7;
+}
+.detach_to_bottom_options span.option{
+    background: black;
+    max-height: 25px;
+}
+.detach_to_bottom_options .list{
+    height: 24px;
+    overflow: hidden;
+    transition: 0.3s ease-out all;
+    text-align: center;
+    background: #2e2e2e;
+}
+
+.detach_to_bottom_options .list div{
+    font-size: 13px;
+}
+
+.detach_to_bottom_options .list div:hover{
+    text-decoration: underline;
+}
+
+.detach_to_bottom_options .list:hover{
+    height: 160px;
+}
+
+.detach_to_bottom{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    width: 30% !important;
+    height: auto;
+    background: #2e2e2e;
+    padding: 5px;
+    box-shadow: 0 12.8px 22.8px rgba(0,0,0,.22), 0 2.4px 7.2px rgba(0,0,0,.18);
+    z-index: 10000;
+    animation: pop 0.5s 1 ease-out;
+}
+.detach_to_bottom.Rlarge{
+    width: 40% !important;
+}
+.detach_to_bottom.Rsmall{
+    width: 20% !important;
+}
+.detach_to_bottom.minimize{
+    top: 100%;
+}
+.minimize .detach_to_bottom_options{
+    top: -55px;
+}
+.minimize .list{
+    pointer-events: none;
+}
+.option_selected{
+    color: #2e9fff;
+    text-decoration: none !important;
+}
+@keyframes pop {
+    from {opacity: 0; transform: translateY(-30px)}
+    to {opacity: 1; transform: translateY(0)}
+}
+
+@media only screen and (max-width: 1200px){
+    .container.content{
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .detach_to_bottom{
+        min-width: 350px;
+    }
+    .detach_to_bottom .detach_to_bottom_options .list{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 490px){
+
+    #disqus_thread{
+        padding: 20px 5px !important;
+    }
+    .detach_to_bottom{
+        min-width: auto;
+        left: 0;
+        right: auto;
+        width: 100% !important;
+        padding: 0;
+        bottom: 0;
+    }
+    .detached_nav{
+        right: 11px !important;
+        z-index: 100000000;
+    }
+    .scroll-top-wrapper.show ~ .themeSwitch{
+        transform: translateY(0px) !important;
+    }
+    .scroll-top-wrapper{
+        right: 10px !important;
+        left: auto !important;
+        width: 36px !important;
+        top: 105px;
+        bottom: auto;
+    }
+    .themeSwitch{
+        right: 10px !important;
+        left: auto !important;
+        width: 36px !important;
+        top: 62px;
+        transform: translateY(0) !important;
+        bottom: auto;
+    }
+}

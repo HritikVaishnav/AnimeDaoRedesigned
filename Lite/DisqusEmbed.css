@@ -1,0 +1,65 @@
+body{
+    color: #222222 !important;
+}
+.nav-tab>a{
+    color: #222222;
+}
+.nav-tab>a:hover{
+    color: #222222 !important;
+}
+.tab-conversation.active>a{
+    color: #222222 !important;
+}
+#reactions{
+    background: #f5f5f5;
+    padding: 7px 0;
+    border-radius: 7px;
+}
+.reaction-item__button{
+    border-color: transparent !important;
+}
+.reaction-item__button:hover{
+    border-color: #666 !important;
+}
+.avatar img{
+    border-radius: 50px;
+}
+.textarea-wrapper{
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #ffffff;
+}
+.vote-down{
+    border-width: 1px;
+    border-color: #444;
+}
+.post-content .post-menu .dropdown-toggle{
+    border: none !important;
+}
+.post-content .post-menu>li a{
+    color: #292929!important;
+}
+.post-content .post-menu{
+    padding-top: 4px;
+    height: 20px !important;
+    border-radius: 50px;
+}
+.comment__footer .vote-down:hover, .comment__footer a:hover, .comment__header .vote-down:hover{
+    color: #000000 !important;
+}
+.post-actions{
+    background: #ffffff;
+    border:none;
+    overflow: hidden;
+}
+.textarea{
+    background: #ffffff;
+    color: #101010 !important;
+}
+.comment__header a{
+    color: #4d4d4d;
+}
+.post-content{
+    padding: 7px 0;
+}

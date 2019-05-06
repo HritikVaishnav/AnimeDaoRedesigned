@@ -1,0 +1,82 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    min-height: 70px;
+    width: 300px;
+    /*background: linear-gradient(to right, #292929, #1c426e);*/
+    border-left: 1px solid white;
+    background: #ffffff;
+}
+.container_main{
+    width: auto;
+    height: auto;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    color: #191919;
+}
+.inline_logo{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: translateY(6px);
+    margin-right: 5px;
+}
+.button{
+    transition: all 0.1s ease-out;
+    margin-top: 7px;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    font-size: 17px;
+    position: relative;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 1px #d3d3d3;
+    /*box-shadow: 1px 2px 8px rgba(0,0,0,0.4);*/
+    max-width: 150px;
+}
+.button:hover{
+    background: #444;
+    cursor: pointer;
+
+}
+.button.enable.active{
+    background: #3dbd46;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+.button.disable.active{
+    background: #df5246;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+.button:after{
+    content: "";
+    font-size: inherit;
+    background: inherit;
+    font: inherit;
+    text-align: inherit;
+    text-shadow: inherit;
+    border-radius: inherit;
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.enable.active:after{
+    content: "enabled";
+}
+.disable.active:after{
+    content: "disabled";
+}
+.disable:hover{
+    background: #df5246;
+}
+.enable:hover{
+    background: #3dbd46;
+}
